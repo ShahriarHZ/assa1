@@ -79,7 +79,7 @@ header {
  
     background-image: url("../assets/hero-bg.png");
     background-position: center 40%;
-    
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
@@ -434,7 +434,7 @@ hr{
 }
 .footer-container {
     background-color: #1a0b2e; 
-    background-image: url("assets/footer-bg.png");
+    background-image: url("../assets/footer-bg.png");
     background-size: cover;
     background-position: center;
     min-height: 400px; 
@@ -456,6 +456,7 @@ hr{
 .footer-content h1 span {
     background: linear-gradient(to right, #ff8a00, #da1b60, #9c27b0);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -485,4 +486,81 @@ hr{
     font-size: 0.8rem;
     opacity: 0.6;
     margin-top: 20px;
+}
+@media (max-width: 576px) {
+    .container, .stars, hr, .grid-layout, .host-card {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        padding: 20px !important;
+    }
+    .menu {
+        display: none;
+    }
+    .nav {
+        justify-content: space-between;
+    }
+    .hero {
+        background-size: cover;
+        min-height: auto;
+        padding: 60px 0;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .circle {
+        width: 180px;
+        height: 180px;
+    }
+    .badge {
+        right: 140px;
+        top: 10px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .stars {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .grid-layout {
+        grid-template-columns: 1fr; 
+        padding: 40px 15px;
+    }
+    .premium, .mobile, .community, .interview, .resources {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+    }
+    .cards-design {
+        max-width: 100%;
+    }
+    .host-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-glow {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .footer-container{
+        background-size: cover;
+    }
+    .footer-content h1 {
+        font-size: 2.5rem;
+    }
+    .links {
+        flex-wrap: wrap; 
+        gap: 15px;
+    }
 }
