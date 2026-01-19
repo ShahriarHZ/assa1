@@ -164,6 +164,36 @@ header {
 .btn img {
     width: 18px;
 }
-
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 79.5px;
+}
+.About h1{
+    margin-bottom: 18px;
+}
+hr{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 80.5px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 120px;   
+    
+}
+.stars h1{
+    margin-bottom: 18px;
+    color:rgb(57, 221, 106) ; 
+    text-align: center;
+}
 
 
